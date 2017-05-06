@@ -8,4 +8,8 @@
 	<bean id="myCoach" class="training.demo.models.TrackCoach">
 		<constructor-arg ref="myFortune" />
 	</bean>
+	
+	<bean id="myCricketCoach" class="training.demo.models.CricketCoach">
+		<property name="fortune" ref="myFortune"></property>
+	</bean>
 </beans>
