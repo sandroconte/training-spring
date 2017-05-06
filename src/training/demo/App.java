@@ -1,14 +1,18 @@
 package training.demo;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import training.demo.dao.Coach;
-import training.demo.models.BaseballCoach;
-import training.demo.models.TrackCoach;
 
 public class App {
 
 	public static void main(String[] args) {
-		Coach thecoach = new TrackCoach();
-		System.out.println(thecoach.getDailyWorkout());
+		ClassPathXmlApplicationContext context = 
+				new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		Coach theCoach = context.getBean("myCoach", Coach.class);
+		System.out.println(theCoach.getDailyWorkout());
+		context.close();
 
 	}
 
