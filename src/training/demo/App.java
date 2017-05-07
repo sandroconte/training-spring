@@ -3,6 +3,7 @@ package training.demo;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import training.demo.dao.Coach;
+import training.demo.models.CricketCoach;
 
 public class App {
 
@@ -10,9 +11,11 @@ public class App {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Coach theCoach = context.getBean("myCricketCoach", Coach.class);
+		CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
+		System.out.println(theCoach.getEmail());
+		System.out.println(theCoach.getTeam());
 		context.close();
 
 	}

@@ -6,7 +6,25 @@ import training.demo.services.Fortune;
 public class CricketCoach implements Coach {
 	
 	private Fortune fortune;
+	private String email;
+	private String team;
 	
+	public String getEmail() {
+		return email;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public CricketCoach(){
 		System.out.println("CricketCoach: inside no-args constructor");
 	}
