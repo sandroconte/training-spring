@@ -12,13 +12,16 @@ public class TennisCoach implements Coach {
 	private Fortune fortune;
 	
 	@Autowired
-	public TennisCoach(Fortune fortune){
-		this.fortune = fortune;
-	}
+	public TennisCoach(){}
 	
 	@Override
 	public String getDailyWorkout() {
 		return "Practice your backhand volley";
+	}
+
+	@Autowired
+	public void setFortune(Fortune fortune) {
+		this.fortune = fortune;
 	}
 
 	@Override
