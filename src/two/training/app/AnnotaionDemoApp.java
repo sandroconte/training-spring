@@ -1,5 +1,7 @@
 package two.training.app;
 
+import java.util.Random;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import two.training.services.Coach;

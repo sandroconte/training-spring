@@ -1,6 +1,7 @@
 package two.training.services.implementations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import two.training.services.Coach;
@@ -10,6 +11,7 @@ import two.training.services.Fortune;
 public class TennisCoach implements Coach {
 
 	@Autowired
+	@Qualifier("randomFortune")
 	private Fortune fortune;
 	
 	public TennisCoach(){}
