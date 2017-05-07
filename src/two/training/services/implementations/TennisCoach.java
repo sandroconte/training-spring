@@ -9,17 +9,16 @@ import two.training.services.Fortune;
 @Component
 public class TennisCoach implements Coach {
 
+	@Autowired
 	private Fortune fortune;
 	
-	@Autowired
 	public TennisCoach(){}
 	
 	@Override
 	public String getDailyWorkout() {
 		return "Practice your backhand volley";
 	}
-
-	@Autowired
+	
 	public void setFortune(Fortune fortune) {
 		this.fortune = fortune;
 	}
