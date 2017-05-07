@@ -2,7 +2,7 @@ package two.training.app;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import two.training.dao.Coach;
+import two.training.services.Coach;
 
 public class AnnotaionDemoApp {
 
@@ -11,6 +11,7 @@ public class AnnotaionDemoApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		Coach theCoach = context.getBean("tennisCoach", Coach.class);
 		System.out.println(theCoach.getDailyWorkout());
+		System.out.println(theCoach.getDailyFortune());
 		context.close();
 	}
 
