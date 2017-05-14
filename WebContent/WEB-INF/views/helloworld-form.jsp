@@ -7,6 +7,9 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<h2>Spring mvc demo - Home page</h2>
+		<form action="process-form" method="GET">
+			<input type="text" name="studentName" placeholder="What's your name?"/>
+			<button type="submit">Send</button>
+		</form>
 	</body>
 </html>
