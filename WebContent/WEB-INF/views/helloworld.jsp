@@ -8,5 +8,8 @@
 </head>
 <body>
 	<h2>Hello ${param.studentName}</h2>
+	<div>
+		<p>${message}</p>
+	</div>
 </body>
 </html>
