@@ -8,5 +8,6 @@
 	</head>
 	<body>
 		<h2>Spring mvc demo - Home page</h2>
+		<img src="${pageContext.request.contextPath}/static/img/eb5359262e1027ec30a85a0441fa6434.jpeg" />
 	</body>
 </html>
