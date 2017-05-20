@@ -6,6 +6,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Student registration form</title>
+<style type="text/css">
+	.error{ color: red; }
+</style>
 </head>
 <body>
 	<form:form action="process-form" modelAttribute="student">

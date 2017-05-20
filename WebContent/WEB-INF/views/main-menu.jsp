@@ -12,6 +12,8 @@
 		<hr />
 		<a href="student/show-form">Student form</a>
 		<hr />
+		<a href="customer/show-form">Customer form</a>
+		<hr />
 		<img src="${pageContext.request.contextPath}/static/img/eb5359262e1027ec30a85a0441fa6434.jpeg" />
 	</body>
 </html>
