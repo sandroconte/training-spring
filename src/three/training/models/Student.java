@@ -1,23 +1,12 @@
 package three.training.models;
 
-import java.util.LinkedHashMap;
-
 public class Student {
 	
 	String firstName;
 	String lastName;
-	String country;
-	
-	
-	private LinkedHashMap<String, String> countryOptions;
+	String country;	
 		
-	public Student(){
-		countryOptions = new LinkedHashMap<>();
-		countryOptions.put("BR", "Brazil");
-		countryOptions.put("IT", "Italy");
-		countryOptions.put("FR", "France");
-		countryOptions.put("DE", "Germany");
-		countryOptions.put("IN", "India");
+	public Student(){		
 	}	
 
 	public String getFirstName() {
@@ -44,7 +33,4 @@ public class Student {
 		this.country = country;
 	}
 	
-	public LinkedHashMap<String, String> getCountryOptions() {
-		return countryOptions;
-	}
 }

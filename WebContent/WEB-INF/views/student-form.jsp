@@ -19,7 +19,7 @@
 		</fieldset>
 		<fieldset>
 			<form:select path="country">
-				<form:options items="${student.countryOptions}" />				
+				<form:options items="${theCountryOptions}" />				
 			</form:select>
 		</fieldset>
 		<fieldset>
