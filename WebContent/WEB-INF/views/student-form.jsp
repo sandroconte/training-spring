@@ -19,11 +19,7 @@
 		</fieldset>
 		<fieldset>
 			<form:select path="country">
-				<form:option value="Brazil" label="Brazil"></form:option>
-				<form:option value="Italy" label="Italy"></form:option>
-				<form:option value="German" label="German"></form:option>
-				<form:option value="France" label="France"></form:option>
-				<form:option value="India" label="India"></form:option>
+				<form:options items="${student.countryOptions}" />				
 			</form:select>
 		</fieldset>
 		<fieldset>
