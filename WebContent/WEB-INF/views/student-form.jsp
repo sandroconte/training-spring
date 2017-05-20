@@ -19,9 +19,19 @@
 		</fieldset>
 		<fieldset>
 			<form:select path="country">
-				<form:options items="${theCountryOptions}" />				
+				<form:options items="${countryOptions}" />				
 			</form:select>
 		</fieldset>
+		<fieldset>
+			<label>Favorite language</label>
+			<form:radiobuttons path="favoriteLanguage" items="${languagesOptions}"  /> 
+		</fieldset>
+		
+		<fieldset>
+			<label>Operate System</label>
+			<form:checkboxes path="operatingSystem" items="${systemsOptions}"  /> 
+		</fieldset>
+		
 		<fieldset>
 			<button type="submit">Save</button>
 		</fieldset>
