@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>The student is confirmed: ${student.firstName} ${student.lastName}</h1>
+	<hr />
+	<h2>Country: ${student.country}</h2>
 </body>
 </html>

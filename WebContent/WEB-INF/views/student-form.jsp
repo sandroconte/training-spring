@@ -18,6 +18,15 @@
 			<form:input path="lastName" /> 
 		</fieldset>
 		<fieldset>
+			<form:select path="country">
+				<form:option value="Brazil" label="Brazil"></form:option>
+				<form:option value="Italy" label="Italy"></form:option>
+				<form:option value="German" label="German"></form:option>
+				<form:option value="France" label="France"></form:option>
+				<form:option value="India" label="India"></form:option>
+			</form:select>
+		</fieldset>
+		<fieldset>
 			<button type="submit">Save</button>
 		</fieldset>
 	</form:form>
