@@ -29,6 +29,11 @@
 			<form:errors path="postalCode" cssClass="error" />
 		</fieldset>
 		<fieldset>
+			<label>Course Code</label>
+			<form:input path="courseCode" />
+			<form:errors path="courseCode" cssClass="error" />
+		</fieldset>		
+		<fieldset>
 			<button type="submit">Save</button>
 		</fieldset>
 	</form:form>
