@@ -19,6 +19,16 @@
 			<form:errors path="lastName" cssClass="error" />
 		</fieldset>
 		<fieldset>
+			<label>Age</label>
+			<form:input path="age" />
+			<form:errors path="age" cssClass="error" />
+		</fieldset>		
+		<fieldset>
+			<label>Postal Code</label>
+			<form:input path="postalCode" />
+			<form:errors path="postalCode" cssClass="error" />
+		</fieldset>
+		<fieldset>
 			<button type="submit">Save</button>
 		</fieldset>
 	</form:form>
